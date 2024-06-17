@@ -1,0 +1,86 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+
+.title{
+font-size: medium;
+}
+
+.color-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button:nth-child(1) {
+  background-color:green; /* green*/
+}
+
+button:nth-child(3) {
+  background-color: #dd28b0; /* pink */
+}
+
+button:nth-child(2) {
+  background-color: #dd28b0; /* Blue*/
+}
+
+button:nth-child(3) {
+  background-color: #122ced; /* red */
+}
+
+button:nth-child(4) {
+  background-color: #ffff00; /* Yellow */
+}
+
+button:nth-child(5) {
+  background-color:#FF7F00; /* black*/
+}
+
+button:nth-child(7) {
+  background-color: #e6e0e0; /*white*/
+}
+
+.reset-button {
+  margin-top: 20px;
+}
+.reset-button button {
+  color: #000; /* Change color to black */
+  background-color: #fff; /* Change background color to white */
+  border: 1px solid #000; /* Add black border */
+}
+
+.reset-button button:hover {
+  background-color: #000; /* Change background color on hover to black */
+  color: #fff; /* Change text color on hover to white */
+}
+/* Add this CSS to create the jump animation */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button-animation {
+  animation: jump 0.5s ease;
+}
